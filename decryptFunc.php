@@ -1,6 +1,6 @@
 <?php
   require "enc.php";
-  $words = "<encrypted>".$_POST["words"]."</encrypted>";
+  $words = file_get_contents($_FILES["encDoc"]["tmp_name"]);
   $data = simplexml_load_string($words) or die("Couldn't make object");
   
   //Get the key

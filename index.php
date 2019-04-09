@@ -16,7 +16,7 @@
       }
     </script>
     <form action=submit.php method=POST>
-      <h2 id=counter></h2>
+      <h2 id=counter>0</h2>
       <textarea onkeyup=wordCount(this) placeholder='Write your words here...' name=words></textarea>
       <input type=text name=key placeholder='Decryption key'>
       <button type=submit name=submit value=submit id=submitWriting>SUBMIT</button>

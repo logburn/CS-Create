@@ -7,11 +7,10 @@
     <link rel=stylesheet href=style.css type=text/css>
   </head>
   <body>
-    <form action=decryptFunc.php method=POST enctype=multipart/form-data>
-      <!--<input type=file name=doc accept=.txt >-->
-      <textarea placeholder="Paste your encrypted file's contents here" name=words></textarea>
-      <input type=text name=key placeholder='Decryption key'>
-      <button type=submit name=submit value=submit id=submitWriting>SUBMIT</button>
+  <form method=POST action=decryptFunc.php enctype="multipart/form-data">
+    <input type=file name=encDoc>
+    <input type=text name=key placeholder='Decryption key'>
+    <button type=submit name=submit value=submit id=submitWriting>SUBMIT</button>
     </form>
   </body>
 </html>
