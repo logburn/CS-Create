@@ -6,20 +6,9 @@
     <meta name=viewport content=width=device-width,initial-scale=1.0>
     <link rel=stylesheet href=style.css type=text/css>
   </head>
-  <body>
-    <script>
-      function wordCount(thing) {
-        regex = /(\S\s)|(([A-Z]|[a-z])(\.|\!|\?|\z))/;
-        numOfParenthesis = 5; //how many par. sets are in the regex
-        words = (thing.value.split(regex).length-1)/numOfParenthesis;
-        document.getElementById("counter").innerHTML = words;
-      }
-    </script>
-    <form action=submit.php method=POST>
-      <h2 id=counter>0</h2>
-      <textarea onkeyup=wordCount(this) placeholder='Write your words here...' name=words></textarea>
-      <input type=text name=key placeholder='Decryption key'>
-      <button type=submit name=submit value=submit id=submitWriting>SUBMIT</button>
-    </form>
+  <body class=center>
+    <h2><a href=encrypt.php>ENCRYPT</a></h2>
+    <p>or</p>
+    <h2><a href=decrypt.php>DECRYPT</a></h2>
   </body>
 </html>

@@ -7,10 +7,12 @@
     <link rel=stylesheet href=style.css type=text/css>
   </head>
   <body>
-  <form method=POST action=decryptFunc.php enctype="multipart/form-data">
-    <input type=file name=encDoc>
-    <input type=text name=key placeholder='Decryption key'>
-    <button type=submit name=submit value=submit id=submitWriting>SUBMIT</button>
+    <form class=center method=POST action=decryptFunc.php enctype="multipart/form-data">
+      <input type=file name=encDoc><br>
+      <input id=key type=text name=key placeholder='Decryption key'><br>
+      <button type=submit name=submit value=submit id=submitWriting>SUBMIT</button>
     </form>
+    <br>
+    <p class=center><a href=/cs/encrypt.php>Encrypt a file</a></p>
   </body>
 </html>
