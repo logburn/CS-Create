@@ -40,6 +40,9 @@ textarea{
   font-size: 0.9em;
   color: inherit;
 }
+#decCont{
+  font-family: monospace;
+}
 button{
   display: block;
   margin-left: auto;
